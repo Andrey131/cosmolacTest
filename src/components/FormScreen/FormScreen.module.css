@@ -16,7 +16,7 @@
 
 .input {
   padding: 1em 1em 1em 1em;
-  margin: 1em 0em 0em 0em;
+  margin: 0em 0em 1em 0em;
   border-radius: 10px;
   border: none;
   font-family: "Montserrat";
@@ -50,6 +50,7 @@
   font-size: 26px;
   line-height: 150%;
   color: #ffffff;
+  margin: 0 0 1em 0;
 }
 
 .formContainer {
@@ -95,4 +96,13 @@
 
 .checkBox {
   transform: scale(2);
+}
+
+.error {
+  color: #ff0000;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
 }
