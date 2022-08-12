@@ -1,0 +1,29 @@
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0em 0em 0em;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 1em 4em 1em 4em;
+}
+
+.navbarItem a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbarItem a:hover {
+  color: #e71a95;
+}

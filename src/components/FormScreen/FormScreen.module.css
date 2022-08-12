@@ -1,0 +1,90 @@
+.background {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    linear-gradient(180deg, #006d85 0%, #40c0dc 100%), #111111;
+  display: flex;
+  gap: 20px;
+  height: 800px;
+  padding: 6em 26em 1em 26em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.input {
+  padding: 1em 1em 1em 1em;
+  margin: 1em 0em 0em 0em;
+  border-radius: 10px;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 150%;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.submitButton {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #e71a95;
+  color: white;
+  margin: 16px 0px 16px 0px;
+  padding: 16px 16px 16px 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+.checkBoxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: white;
+  margin: 32px 0px 16px 0px;
+}
+
+.checkBox {
+  border-radius: 10px;
+  border: none;
+  transform: scale(2);
+}

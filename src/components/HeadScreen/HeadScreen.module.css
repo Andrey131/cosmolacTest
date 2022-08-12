@@ -1,0 +1,61 @@
+.background {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    radial-gradient(50% 50% at 50% 50%, #40c0dc 0%, #006d85 100%), #ffffff;
+  display: flex;
+  gap: 20px;
+  height: 800px;
+  padding: 6em 20em 1em 20em;
+}
+
+.container {
+  width: 50%;
+}
+
+.itemContainer {
+  padding: 54px 0px 0px 0px;
+}
+
+.h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+.h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 100px;
+  color: white;
+}
+
+.h3 {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #e71a95;
+  width: 80%;
+  color: white;
+  margin: 16px 0px 16px 0px;
+  padding: 16px 16px 16px 16px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s linear;
+}
+
+.button:hover {
+  background-color: #b71a95;
+}
