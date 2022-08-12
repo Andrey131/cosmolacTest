@@ -16,7 +16,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
-  padding: 1em 4em 1em 4em;
+  padding: 1em 20em 0em 20em;
+  align-items: center;
 }
 
 .navbarItem a {
@@ -26,4 +27,37 @@
 
 .navbarItem a:hover {
   color: #e71a95;
+}
+
+.navbarSelectedItem {
+  background-color: #e71a95;
+  padding: 12px 12px 12px 12px;
+  border-radius: 10px;
+}
+
+.navbarSelectedItem a {
+  color: white;
+  text-decoration: none;
+}
+
+.searchBlokContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.searchBlokContainerHidden {
+  display: none;
+}
+
+.searchBlok {
+  padding: 1em 78em 1em 1em;
+  margin: 0em 0em 1em 0em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #808080;
+  outline: none;
+  background-image: url(../../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: 1180px;
 }

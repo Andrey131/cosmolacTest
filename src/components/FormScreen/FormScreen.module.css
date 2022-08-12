@@ -24,6 +24,13 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  outline: none;
+}
+.phoneInput {
+  padding: 1em 1em 1em 2em;
+  background-image: url(../../images/flag.png);
+  background-repeat: no-repeat;
+  background-position: 16px;
 }
 
 .h1 {
@@ -69,6 +76,9 @@
   border-radius: 10px;
   border: none;
 }
+.submitButtonBlock {
+  opacity: 30%;
+}
 
 .checkBoxContainer {
   display: flex;
@@ -84,7 +94,5 @@
 }
 
 .checkBox {
-  border-radius: 10px;
-  border: none;
   transform: scale(2);
 }

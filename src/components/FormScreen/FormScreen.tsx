@@ -1,6 +1,5 @@
 import s from "./FormScreen.module.css";
-import { RefObject, useEffect, useState } from "react";
-import React from "react";
+import { useState } from "react";
 import "@fontsource/montserrat";
 
 const FormScreen = () => {
@@ -49,7 +48,8 @@ const FormScreen = () => {
   };
 
   const checkBoxHandler = (e: any) => {
-    setCheckBox(e.target.value);
+    console.log(e);
+    setCheckBox(e.target.checked);
   };
 
   return (
@@ -81,7 +81,7 @@ const FormScreen = () => {
                 type="text"
                 value={phone}
                 placeholder={"+7*"}
-                className={s.input}
+                className={`${s.input} ${s.phoneInput}`}
                 onChange={phoneHandler}
               />
               {mailError && <div style={{ color: "red" }}>{mailError}</div>}
@@ -94,9 +94,10 @@ const FormScreen = () => {
               />
               <select
                 size={1}
-                name="hero[]"
+                name="deal"
                 className={s.input}
                 onChange={dealHandler}
+                value={deal}
               >
                 <option selected disabled>
                   Ваш тип бизнеса
@@ -121,7 +122,7 @@ const FormScreen = () => {
             <div className={s.checkBoxContainer}>
               <input
                 type="checkbox"
-                value={""}
+                value={checkBox}
                 className={s.checkBox}
                 onChange={checkBoxHandler}
               />
@@ -133,7 +134,11 @@ const FormScreen = () => {
             <input
               type="submit"
               value="Отправить заявку"
-              className={s.submitButton}
+              className={
+                checkBox
+                  ? s.submitButton
+                  : `${s.submitButton} ${s.submitButtonBlock}`
+              }
             />
           </form>
         </div>
