@@ -1,0 +1,172 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 2em 20em 1em 20em;
+  padding: 2em 0em 0em 0em;
+  border-top: 1px solid #303030;
+}
+
+.bannersContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.ozonFrame {
+  background: #005bfe;
+}
+
+.wbFrame {
+  background: linear-gradient(86.95deg, #c211a7 0%, #4f1176 100%);
+}
+
+.frame {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.nailPolish {
+  height: 100%;
+  position: absolute;
+  right: 140px;
+}
+
+.logo {
+  height: 50%;
+  padding: 0 0 0 1em;
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 16px 16px 16px 16px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s linear;
+  margin: 0 1em 0 0;
+}
+
+.button:hover {
+  background-color: #b71a95;
+}
+
+.text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+}
+
+@media screen and (max-width: 1920px) {
+  .background {
+    margin: 1em 12em 1em 12em;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .background {
+    margin: 1em 6em 1em 6em;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .frame {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .frame {
+    height: 100px;
+  }
+
+  .button {
+    font-size: 12px;
+    padding: 12px 16px 12px 16px;
+  }
+
+  .nailPolish {
+    right: 90px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .background {
+    margin: 1em 3em 1em 3em;
+  }
+  .button {
+    font-size: 9px;
+    padding: 12px 16px 12px 16px;
+  }
+  .nailPolish {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .background {
+    margin: 1em 2em 1em 1em;
+  }
+
+  .bannersContainer {
+    flex-direction: column;
+  }
+
+  .frame {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-radius: 6px;
+  }
+
+  .button {
+    font-weight: 600;
+    font-size: 8.64516px;
+    line-height: 11px;
+    padding: 12px 16px 12px 16px;
+  }
+
+  .nailPolish {
+    height: 100%;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .frame {
+    height: 60px;
+  }
+
+  .nailPolish {
+    right: 90px;
+  }
+
+  .button {
+    border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+  }
+}

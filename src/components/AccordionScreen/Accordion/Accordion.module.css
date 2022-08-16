@@ -1,0 +1,46 @@
+.accordionItem {
+  border-bottom: 1px solid #d0d0d0;
+  margin: 0 0 2em 0;
+}
+
+.accordionTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  padding: 1rem 0 2rem 0;
+}
+
+.accordionContent {
+  padding: 0 0 2rem 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.crossRotate {
+  transform: rotate(45deg);
+  fill: red;
+  transition: 0.3s linear;
+}
+
+.cross {
+  transition: 0.3s linear;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+}

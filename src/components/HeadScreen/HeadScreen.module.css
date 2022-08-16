@@ -5,10 +5,15 @@
   gap: 20px;
   height: 800px;
   padding: 6em 20em 1em 20em;
+  border-radius: 30px 30px 0px 0px;
+  overflow: hidden;
+  position: relative;
 }
 
 .container {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .itemContainer {
@@ -20,6 +25,7 @@
   font-family: "Montserrat";
   font-size: 36px;
   font-weight: 700;
+  line-height: 150%;
   color: white;
 }
 
@@ -58,4 +64,118 @@
 
 .button:hover {
   background-color: #b71a95;
+}
+
+.image {
+  position: block;
+  height: 100%;
+}
+
+@media screen and (max-width: 1600px) {
+  .background {
+    padding: 6em 12em 1em 12em;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .background {
+    padding: 6em 6em 1em 6em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .background {
+    padding: 6em 3em 1em 3em;
+  }
+
+  .h1 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .h2 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 150%;
+  }
+
+  .h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .button {
+    font-size: 18px;
+    font-weight: 600;
+
+    width: 95%;
+    margin: 16px 0px 16px 0px;
+    padding: 16px 16px 16px 16px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .background {
+    padding: 0em 0em 0em 1em;
+  }
+
+  .container {
+    width: 100%;
+    z-index: 3;
+    flex-direction: column;
+  }
+
+  .h1 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .h2 {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 150%;
+    width: 60%;
+  }
+
+  .h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+  }
+
+  .image {
+    position: absolute;
+    height: 60%;
+    right: -5%;
+
+    top: 25%;
+  }
+
+  .buttonBlock {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 5px;
+  }
+
+  .button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .image {
+    right: -15%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image {
+    right: -35%;
+  }
 }

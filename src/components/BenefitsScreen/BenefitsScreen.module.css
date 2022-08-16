@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10em 6em 10em 10em;
+}
+
+.itemsContainer {
+  display: flex;
+}
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentContainer {
+  width: 40%;
+  margin: 0em 6em 0em 6em;
+}
+
+.h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 48px;
+  line-height: 150%;
+  color: black;
+}
+
+.button {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  background-color: #e71a95;
+  width: 80%;
+  color: white;
+  margin: 32px 0px 0px 0px;
+  padding: 24px 16px 24px 16px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s linear;
+}
+
+.button:hover {
+  background-color: #b71a95;
+}
+
+@media screen and (max-width: 1920px) {
+  .contentContainer {
+    width: 50%;
+    margin: 0em 2em 0em 2em;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    margin: 10em 1em 10em 2em;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    margin: 6em 1em 6em 1em;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    margin: 2em 0em 2em 1em;
+    flex-direction: column;
+  }
+  .rackImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rackImage {
+    width: 80%;
+  }
+
+  .button {
+    width: 90%;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .itemsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  .h2 {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 150%;
+  }
+
+  .h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
