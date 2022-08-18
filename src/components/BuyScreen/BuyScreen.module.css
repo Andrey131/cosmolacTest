@@ -132,7 +132,7 @@
 
 @media screen and (max-width: 700px) {
   .background {
-    margin: 1em 2em 1em 1em;
+    margin: 1em 20px 1em 20px;
   }
 
   .bannersContainer {
