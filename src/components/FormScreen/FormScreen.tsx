@@ -2,6 +2,7 @@ import s from "./FormScreen.module.css";
 import { useState } from "react";
 import "@fontsource/montserrat";
 import CheckBox from "../common/CheckBox/CheckBox";
+import Input from "../common/Input/Input";
 
 const FormScreen = () => {
   const [name, setName] = useState("");
@@ -101,37 +102,29 @@ const FormScreen = () => {
         <div className={s.formContainer}>
           <form onSubmit={handleSubmit} className={s.form}>
             <div className={s.container}>
-              {nameError && <div className={s.error}>{nameError}</div>}
-              <input
-                onChange={nameHandler}
-                type="text"
+              <Input
+                error={nameError}
                 value={name}
                 placeholder={"Имя*"}
-                className={s.input}
+                handler={nameHandler}
               />
-              {cityError && <div className={s.error}>{cityError}</div>}
-              <input
-                type="text"
+              <Input
+                error={cityError}
                 value={city}
                 placeholder={"Город*"}
-                className={s.input}
-                onChange={cityHandler}
+                handler={cityHandler}
               />
-              {phoneError && <div className={s.error}>{phoneError}</div>}
-              <input
-                type="text"
+              <Input
+                error={phoneError}
                 value={phone}
                 placeholder={"+7*"}
-                className={`${s.input} ${s.phoneInput}`}
-                onChange={phoneHandler}
+                handler={phoneHandler}
               />
-              {mailError && <div className={s.error}>{mailError}</div>}
-              <input
-                type="text"
+              <Input
+                error={mailError}
                 value={mail}
                 placeholder={"Электронная почта*"}
-                className={s.input}
-                onChange={mailHandler}
+                handler={mailHandler}
               />
               <select
                 size={1}

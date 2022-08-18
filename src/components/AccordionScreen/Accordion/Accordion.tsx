@@ -26,9 +26,6 @@ const Accordion: React.FC<PropsType> = ({ title, content }) => {
     window.addEventListener("resize", resizeHandler);
     accordionContentRef.current &&
       setAccordionContentMargin(-accordionContentRef.current.clientHeight);
-
-    accordionContentRef.current &&
-      console.log(accordionContentRef.current.clientHeight);
     return () => {
       window.removeEventListener("resize", resizeHandler);
     };
