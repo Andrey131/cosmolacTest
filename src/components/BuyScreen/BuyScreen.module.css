@@ -137,6 +137,7 @@
 
   .bannersContainer {
     flex-direction: column;
+    gap: 10px;
   }
 
   .frame {
@@ -166,6 +167,11 @@
     font-size: 12px;
     line-height: 150%;
   }
+
+  .logo {
+    height: 44%;
+    padding: 0 0 0 16px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -175,6 +181,29 @@
 
   .nailPolish {
     right: 90px;
+  }
+
+  .wbFrame .nailPolish {
+    right: 90px;
+  }
+
+  .button {
+    border-radius: 6px;
+    padding: 8px 16px 8px 16px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .background {
+    margin: 1em 10px 1em 10px;
+  }
+
+  .frame {
+    height: 60px;
+  }
+
+  .nailPolish {
+    visibility: hidden;
   }
 
   .button {
