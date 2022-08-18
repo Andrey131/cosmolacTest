@@ -18,7 +18,15 @@ const Accordion: React.FC<PropsType> = ({ title, content }) => {
           <Cross className={isActive ? s.cross : s.crossRotate} />
         </div>
       </div>
-      {isActive && <div className={s.accordionContent}>{content}</div>}
+      <div
+        className={
+          isActive
+            ? `${s.accordionContent}`
+            : `${s.accordionContent} ${s.accordionContentHidden}`
+        }
+      >
+        {content}
+      </div>
     </div>
   );
 };

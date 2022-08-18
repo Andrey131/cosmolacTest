@@ -83,6 +83,10 @@
   opacity: 30%;
 }
 
+.submitButton:hover {
+  background-color: #b71a95;
+}
+
 .error {
   color: #ff0000;
   font-family: "Montserrat";

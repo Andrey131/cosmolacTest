@@ -1,6 +1,7 @@
 .accordionItem {
   border-bottom: 1px solid #d0d0d0;
   margin: 30px 0 30px 0;
+  transition: 0.3s all;
 }
 
 .accordionTitle {
@@ -23,6 +24,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  opacity: 100%;
+  transition: 0.3s all;
+}
+
+.accordionContentHidden {
+  opacity: 0%;
+  margin-top: -44px;
+  pointer-events: none;
 }
 
 .crossRotate {

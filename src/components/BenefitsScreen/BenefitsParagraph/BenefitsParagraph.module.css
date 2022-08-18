@@ -1,7 +1,8 @@
 .container {
   display: flex;
   flex-direction: row;
-  padding: 2em;
+  align-items: center;
+  padding: 10px;
 }
 
 .h1 {
@@ -14,15 +15,12 @@
 }
 
 .numberContainer {
+  display: block;
   width: 60px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 86px;
-  line-height: 105px;
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+}
+
+.numberContainerMobile {
+  display: none;
 }
 
 @media screen and (max-width: 1900px) {
@@ -35,6 +33,16 @@
   .container {
     border-bottom: 1px solid #d0d0d0;
     padding-bottom: 1em;
+  }
+
+  .numberContainer {
+    width: 60px;
+    display: none;
+  }
+
+  .numberContainerMobile {
+    width: 60px;
+    display: block;
   }
 
   .h1 {

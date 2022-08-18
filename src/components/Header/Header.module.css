@@ -39,6 +39,11 @@
   background-color: #e71a95;
   padding: 12px 12px 12px 12px;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.navbarSelectedItem:hover {
+  background-color: #b71a95;
 }
 
 .navbarSelectedItem a {
@@ -51,15 +56,20 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  opacity: 100%;
+  transition: 0.3s all;
 }
 
 .searchBlokContainerHidden {
-  display: none;
+  opacity: 0%;
+  margin-bottom: -84px;
+  pointer-events: none;
+  z-index: -10;
 }
 
 .searchBlok {
   width: 100%;
-  margin: 0em 20em 1em 20em;
+  margin: -20px 24em 40px 24em;
   padding: 1em 1em 1em 1em;
   border-radius: 10px;
   display: flex;
@@ -93,7 +103,7 @@
   }
 
   .searchBlok {
-    margin: 0em 1em 1em 1em;
+    margin: -20px 14em 40px 14em;
   }
 }
 
@@ -103,7 +113,7 @@
   }
 
   .searchBlok {
-    margin: 0em 1em 1em 1em;
+    margin: -20px 7em 40px 7em;
   }
 }
 
@@ -116,17 +126,24 @@
   }
 
   .searchBlok {
-    margin: 0em 1em 1em 1em;
+    margin: -20px 3em 40px 3em;
   }
 }
 
 @media screen and (max-width: 1100px) {
   .navbar {
     padding: 0px 0px 0em 0px;
-    margin: 60px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
     width: 100%;
     justify-content: space-between;
   }
+  .searchBlokContainerHidden {
+    opacity: 0%;
+    margin-bottom: -60px;
+    pointer-events: none;
+    z-index: -10;
+  }
+
   .desktop {
     display: none;
   }

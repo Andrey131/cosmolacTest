@@ -9,7 +9,7 @@ type PropsType = {};
 const AccordionScreen: React.FC<PropsType> = (props) => {
   return (
     <div className={s.background}>
-      <div className="accordion">
+      <div className={s.conteiner}>
         <div className={s.title}>Вопрос-ответ</div>
         <Accordion
           title="Что такое COSMOLAC?"

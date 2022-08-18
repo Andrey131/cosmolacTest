@@ -61,6 +61,7 @@
   border: none;
   transition: 0.3s linear;
   margin: 0 20px 0 0;
+  cursor: pointer;
 }
 
 .wbFrame .button {

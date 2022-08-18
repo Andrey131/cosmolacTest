@@ -5,13 +5,23 @@ import "@fontsource/montserrat";
 
 interface PropsType {
   image: string;
+  mobileImage: string;
   body: JSX.Element;
 }
 
-const BenefitsParagraph: React.FC<PropsType> = ({ image, body }) => {
+const BenefitsParagraph: React.FC<PropsType> = ({
+  image,
+  body,
+  mobileImage,
+}) => {
   return (
     <div className={s.container}>
-      <div className={s.numberContainer}>2</div>
+      <div className={s.numberContainer}>
+        <img src={image} alt="logo" />
+      </div>
+      <div className={s.numberContainerMobile}>
+        <img src={mobileImage} alt="logo" />
+      </div>
       <div className={s.h1}>{body}</div>
     </div>
   );
