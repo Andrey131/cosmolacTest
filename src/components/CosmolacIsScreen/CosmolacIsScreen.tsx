@@ -3,11 +3,11 @@ import { RefObject, useEffect } from "react";
 import React from "react";
 import "@fontsource/montserrat";
 import Benefit from "./Benefit/Benefit";
-import firstImage from "../../images/CosmolacIsScreen/1.svg";
-import secondImage from "../../images/CosmolacIsScreen/2.svg";
-import thirdImage from "../../images/CosmolacIsScreen/3.svg";
-import fourthImage from "../../images/CosmolacIsScreen/4.svg";
-import fifthImage from "../../images/CosmolacIsScreen/5.svg";
+import firstImage from "../../images/CosmolacIsScreen/1.png";
+import secondImage from "../../images/CosmolacIsScreen/2.png";
+import thirdImage from "../../images/CosmolacIsScreen/3.png";
+import fourthImage from "../../images/CosmolacIsScreen/4.png";
+import fifthImage from "../../images/CosmolacIsScreen/5.png";
 
 type PropsType = {};
 
