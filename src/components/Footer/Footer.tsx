@@ -29,13 +29,13 @@ const Footer: React.FC<PropsType> = (props) => {
         <div className={s.centerBlock}>
           <div>Мы в соцсетях</div>
           <div className={s.social}>
-            <div>
+            <div className={s.socialBlock}>
               <img src={tg} alt="logo" />
               <img src={inst} alt="logo" />
               <img src={youtube} alt="logo" />
               <img src={vk} alt="logo" />
             </div>
-            <div>
+            <div className={s.socialBlock}>
               <img src={tt} alt="logo" />
               <img src={wb} alt="logo" />
               <img src={ozon} alt="logo" />
@@ -45,7 +45,9 @@ const Footer: React.FC<PropsType> = (props) => {
         </div>
         <div className={s.rightBlock}>
           <div className={s.h1}>
-            © 2012-2022 Cosmolac LTD All rights reserved
+            © 2012-2022 Cosmolac LTD
+            <br />
+            All rights reserved
           </div>
           <div className={s.h2}>
             * – Компания Meta, социальные сети Facebook и Instagram признаны

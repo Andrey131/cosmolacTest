@@ -1,14 +1,14 @@
 import s from "./MailingScreen.module.css";
 import React, { useState } from "react";
 import "@fontsource/montserrat";
-import { ReactComponent as CosmolacLogo } from "../../images/COSMOLAC.svg";
+import CheckBox from "../common/CheckBox/CheckBox";
 
 type PropsType = {};
 
 const MailingScreen: React.FC<PropsType> = (props) => {
   const [mail, setMail] = useState("");
-  const [checkBox1, setCheckBox1] = useState(false);
-  const [checkBox2, setCheckBox2] = useState(false);
+  const [checkBox1, setCheckBox1] = useState(true);
+  const [checkBox2, setCheckBox2] = useState(true);
 
   const [mailError, setMailError] = useState("");
   const handleSubmit = (e: any) => {
@@ -26,7 +26,7 @@ const MailingScreen: React.FC<PropsType> = (props) => {
       /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     if (!re.test(String(e.target.value).toLowerCase())) {
-      setMailError("Некорректный email");
+      setMailError("Указан неверный e-mail");
     } else {
       setMailError("");
     }
@@ -46,35 +46,37 @@ const MailingScreen: React.FC<PropsType> = (props) => {
     <div className={s.background}>
       <div className={s.h1}>ПОДПИШИСЬ НА РАССЫЛКУ</div>
       <form onSubmit={handleSubmit} className={s.form}>
-        <input
-          type="text"
-          value={mail}
-          placeholder={"Электронная почта*"}
-          className={s.input}
-          onChange={mailHandler}
+        <div className={s.inputContainer}>
+          <input
+            className={s.input}
+            type="text"
+            value={mail}
+            placeholder={"Введите ваш e-mail"}
+            onChange={mailHandler}
+          />
+          {mailError && <div className={s.error}>{mailError}</div>}
+          <button type="submit" className={s.submitButton}></button>
+        </div>
+        <CheckBox
+          label={<div>"Я даю согласие на рассылку"</div>}
+          checkBoxHandler={checkBoxHandler1}
+          border="gray"
+          color="black"
+          checked={checkBox1}
         />
-        <button type="submit" className={s.submitButton}></button>
-        <div className={s.checkBoxContainer}>
-          <input
-            type="checkbox"
-            checked={checkBox1}
-            className={s.checkBox}
-            onChange={checkBoxHandler1}
-          />
-          <div>Я даю согласие на рассылку</div>
-        </div>
-        <div className={s.checkBoxContainer}>
-          <input
-            type="checkbox"
-            checked={checkBox2}
-            className={s.checkBox}
-            onChange={checkBoxHandler2}
-          />
-          <div>
-            Я даю согласие на обработку персональных данных. Ознакомиться с
-            политикой конфиденциальности.
-          </div>
-        </div>
+        <CheckBox
+          label={
+            <div>
+              Я даю согласие на обработку персональных данных.
+              <br />
+              Ознакомиться с политикой конфиденциальности.
+            </div>
+          }
+          checkBoxHandler={checkBoxHandler2}
+          border="gray"
+          color="black"
+          checked={checkBox2}
+        />
       </form>
     </div>
   );

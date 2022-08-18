@@ -49,7 +49,7 @@ const Header: React.FC<PropsType> = (props) => {
             <li className={s.navbarSelectedItem}>
               <a href="#">Получить выгодные условия</a>
             </li>
-            <li onClick={searchOnclick}>
+            <li className={s.navbarItem} onClick={searchOnclick}>
               <SearchLogo />
             </li>
           </ul>

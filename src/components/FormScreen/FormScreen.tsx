@@ -1,6 +1,7 @@
 import s from "./FormScreen.module.css";
 import { useState } from "react";
 import "@fontsource/montserrat";
+import CheckBox from "../common/CheckBox/CheckBox";
 
 const FormScreen = () => {
   const [name, setName] = useState("");
@@ -94,8 +95,8 @@ const FormScreen = () => {
       <div className={s.container}>
         <div className={s.h1}>Зарабатывайте вместе с Cosmolac</div>
         <div className={s.h2}>
-          Мы свяжемся с Вами, вышлем индивидуальный прайс и предложим выгодные
-          условия сотрудничества
+          Мы свяжемся с Вами, вышлем индивидуальный прайс
+          <br />и предложим выгодные условия сотрудничества
         </div>
         <div className={s.formContainer}>
           <form onSubmit={handleSubmit} className={s.form}>
@@ -159,18 +160,16 @@ const FormScreen = () => {
                 <option value="Физическое лицо">Физическое лицо</option>
               </select>
             </div>
-            <div className={s.checkBoxContainer}>
-              <input
-                type="checkbox"
-                checked={checkBox}
-                className={s.checkBox}
-                onChange={checkBoxHandler}
-              />
-              <div>
-                Я даю согласие на обработку персональных данных. Ознакомиться с
-                политикой конфиденциальности.
-              </div>
-            </div>
+            <CheckBox
+              label={
+                <div>
+                  Я даю согласие на обработку персональных данных. Ознакомиться
+                  с политикой конфиденциальности.
+                </div>
+              }
+              checkBoxHandler={checkBoxHandler}
+              checked={false}
+            />
             <input
               type="submit"
               value="Отправить заявку"

@@ -1,0 +1,65 @@
+.checkboxWrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.checkboxWrapper input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 0 0 2em;
+  height: 2em;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkboxWrapperGray input[type="checkbox"] {
+  outline: black 1px solid;
+}
+
+.checked {
+  background-color: #007a7e;
+  position: relative;
+}
+
+.checked::before {
+  content: url("../../../images/common/check.svg");
+  font-size: 1.5em;
+  color: #000;
+  position: absolute;
+  right: 6px;
+  top: 0px;
+}
+
+.checkboxWrapper input[type="checkbox"]:disabled {
+  border-color: #c0c0c0;
+  background-color: #c0c0c0;
+}
+
+.checkboxWrapper input[type="checkbox"]:disabled + span {
+  color: #c0c0c0;
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: white;
+  margin: 10px 0px 16px 0px;
+  width: 100%;
+}
+
+.checkboxContainerBlack {
+  color: black;
+}

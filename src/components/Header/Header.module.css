@@ -1,7 +1,7 @@
 .title {
   display: flex;
   justify-content: center;
-  padding: 2em 0em 0em 0em;
+  padding: 40px 0em 0em 0em;
 }
 
 .navbar {
@@ -17,7 +17,13 @@
   justify-content: space-between;
   list-style-type: none;
   padding: 1em 20em 0em 20em;
+  margin: 1em 0em 40px 0em;
   align-items: center;
+}
+
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 .navbarItem a {
@@ -36,6 +42,7 @@
 }
 
 .navbarSelectedItem a {
+  font-weight: 600;
   color: white;
   text-decoration: none;
 }
@@ -80,7 +87,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1900px) {
   .navbar {
     padding: 1em 12em 0em 12em;
   }
@@ -115,7 +122,8 @@
 
 @media screen and (max-width: 1100px) {
   .navbar {
-    padding: 1em 1em 0em 1em;
+    padding: 0px 0px 0em 0px;
+    margin: 60px 20px 20px 20px;
     width: 100%;
     justify-content: space-between;
   }

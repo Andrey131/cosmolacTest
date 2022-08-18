@@ -1,10 +1,10 @@
 .background {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin: 3em 20em 0em 20em;
-  padding: 2em 0em 0em 0em;
-  border-top: 1px solid #303030;
+  gap: 40px;
+  margin: 40px 20em 40px 20em;
+  padding: 40px 0em 0em 0em;
+  border-top: 1px solid #eeeeee;
 }
 
 .h1 {
@@ -39,14 +39,15 @@
 .button {
   text-transform: uppercase;
   font-family: "Montserrat";
-  font-size: 18px;
   font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
   text-align: center;
   background-color: #e71a95;
-  width: 20%;
+  width: 440px;
   color: white;
-  margin: 16px 0px 16px 0px;
-  padding: 16px 16px 16px 16px;
+  margin: 0px 0px 0px 0px;
+  padding: 20px 20px 20px 20px;
   border-radius: 10px;
   border: none;
   transition: 0.3s linear;
@@ -62,9 +63,9 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1900px) {
   .background {
-    margin: 1em 12em 1em 12em;
+    margin: 40px 12em 40px 12em;
   }
 
   .button {

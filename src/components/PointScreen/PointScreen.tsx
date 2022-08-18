@@ -15,7 +15,9 @@ const PointScreen: React.FC<PropsType> = (props) => {
           Точка роста вашего бизнеса
         </div>
         <div className={`${s.h2} ${s.itemContainer}`}>
-          бренд, который продает сам себя
+          бренд, который
+          <br />
+          продает сам себя
         </div>
         <img
           className={s.triangle}

@@ -21,6 +21,7 @@
   -webkit-box-orient: vertical;
   line-clamp: 2;
   box-orient: vertical;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -41,7 +42,7 @@
     align-items: center;
     justify-content: left;
     text-align: left;
-    padding: 1em 0 1em 0;
+    padding: 0 0 0 0;
   }
 
   .image {
@@ -60,7 +61,7 @@
     align-items: center;
     justify-content: left;
     text-align: left;
-    padding: 1em 0 1em 0;
+    padding: 0 0 0 0;
   }
 
   .image {
@@ -76,5 +77,6 @@
     font-size: 16px;
     line-clamp: 3;
     -webkit-line-clamp: 3;
+    padding-top: 0;
   }
 }

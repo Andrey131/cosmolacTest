@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import s from "./Accordion.module.css";
-import cross from "../../../images/cross.svg";
+import { ReactComponent as Cross } from "../../../images/cross.svg";
 
 interface PropsType {
   title: string;
@@ -15,11 +15,7 @@ const Accordion: React.FC<PropsType> = ({ title, content }) => {
       <div className={s.accordionTitle} onClick={() => setIsActive(!isActive)}>
         <div>{title}</div>
         <div>
-          <img
-            src={cross}
-            className={isActive ? s.cross : s.crossRotate}
-            alt="cross"
-          />
+          <Cross className={isActive ? s.cross : s.crossRotate} />
         </div>
       </div>
       {isActive && <div className={s.accordionContent}>{content}</div>}

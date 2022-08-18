@@ -5,7 +5,7 @@ import "@fontsource/montserrat";
 
 interface PropsType {
   image: string;
-  body: string;
+  body: JSX.Element;
 }
 
 const Benefit: React.FC<PropsType> = ({ image, body }) => {

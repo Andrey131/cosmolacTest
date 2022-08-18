@@ -7,7 +7,7 @@
 .h1 {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   padding: 6px 20px 6px 20px;
@@ -15,9 +15,17 @@
 
 .numberContainer {
   width: 60px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 86px;
+  line-height: 105px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1900px) {
   .h1 {
     padding: 6px 10px 6px 10px;
   }
@@ -27,5 +35,9 @@
   .container {
     border-bottom: 1px solid #d0d0d0;
     padding-bottom: 1em;
+  }
+
+  .h1 {
+    padding: 6px 10px 6px 20px;
   }
 }

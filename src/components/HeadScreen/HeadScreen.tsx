@@ -10,7 +10,9 @@ const HeadScreen: React.FC<PropsType> = (props) => {
     <div className={s.background}>
       <div className={s.container}>
         <div className={`${s.h1} ${s.itemContainer}`}>
-          Базы, гель-лаки, топы все для маникюра
+          Базы, гель-лаки, топы
+          <br />
+          все для маникюра
         </div>
         <div className={`${s.h2} ${s.itemContainer}`}>
           оптовые скидки до 50%

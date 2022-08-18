@@ -1,16 +1,16 @@
 .background {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   margin: 2em 20em 1em 20em;
-  padding: 2em 0em 0em 0em;
-  border-top: 1px solid #303030;
+  padding: 40px 0em 0em 0em;
+  border-top: 1px solid #eeeeee;
 }
 
 .bannersContainer {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 40px;
 }
 
 .ozonFrame {
@@ -35,27 +35,36 @@
 .nailPolish {
   height: 100%;
   position: absolute;
-  right: 140px;
+  right: 145px;
+}
+
+.wbFrame .nailPolish {
+  right: 125px;
 }
 
 .logo {
-  height: 50%;
-  padding: 0 0 0 1em;
+  height: 44%;
+  padding: 0 0 0 30px;
 }
 
 .button {
   text-transform: uppercase;
   font-family: "Montserrat";
-  font-size: 18px;
   font-weight: 600;
   text-align: center;
   background-color: white;
-  color: black;
-  padding: 16px 16px 16px 16px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #005bfe;
+  padding: 15px 20px 15px 20px;
   border-radius: 10px;
   border: none;
   transition: 0.3s linear;
-  margin: 0 1em 0 0;
+  margin: 0 20px 0 0;
+}
+
+.wbFrame .button {
+  color: #931293;
 }
 
 .button:hover {
@@ -63,6 +72,8 @@
 }
 
 .text {
+  border-top: 1px solid #eeeeee;
+  padding: 40px 0 0 0;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -72,7 +83,7 @@
   color: #000000;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1900px) {
   .background {
     margin: 1em 12em 1em 12em;
   }

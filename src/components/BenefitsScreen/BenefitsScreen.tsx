@@ -24,25 +24,55 @@ const BenefitsScreen: React.FC<PropsType> = (props) => {
           <div className={s.columnContainer}>
             <BenefitsParagraph
               image={firstImage}
-              body="Цены в 2 раза ниже розничных"
+              body={
+                <div>
+                  Цены в 2 раза
+                  <br />
+                  ниже розничных
+                </div>
+              }
             />
             <BenefitsParagraph
               image={secondImage}
-              body="Персональный менеджер"
+              body={
+                <div>
+                  Персональный
+                  <br />
+                  менеджер
+                </div>
+              }
             />
             <BenefitsParagraph
               image={thirdImage}
-              body="Маркетинговая поддержка"
+              body={
+                <div>
+                  Маркетинговая
+                  <br />
+                  поддержка
+                </div>
+              }
             />
           </div>
           <div className={s.columnContainer}>
             <BenefitsParagraph
               image={fourthImage}
-              body="Отгрузка товара за 1-2 дня"
+              body={
+                <div>
+                  Отгрузка товара
+                  <br />
+                  за 1-2 дня
+                </div>
+              }
             />
             <BenefitsParagraph
               image={fifthImage}
-              body="Сертификаты на всю продукцию"
+              body={
+                <div>
+                  Сертификаты
+                  <br />
+                  на всю продукцию
+                </div>
+              }
             />
             <div className={s.button}>Узнать условия</div>
           </div>

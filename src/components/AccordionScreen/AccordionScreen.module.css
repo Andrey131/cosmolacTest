@@ -1,5 +1,5 @@
 .background {
-  padding: 6em 20em 1em 20em;
+  padding: 80px 20em 80px 20em;
 }
 
 .container {
@@ -14,10 +14,10 @@
   text-transform: uppercase;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 48px;
   line-height: 150%;
-  padding: 0px 0px 32px 0px;
+  padding: 0px 0px 40px 0px;
   text-align: center;
 }
 

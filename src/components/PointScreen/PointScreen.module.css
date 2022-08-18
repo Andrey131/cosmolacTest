@@ -3,8 +3,7 @@
     linear-gradient(180deg, #006d85 0%, #40c0dc 100%);
   display: flex;
   gap: 20px;
-  height: 800px;
-  padding: 6em 20em 0em 20em;
+  padding: 113.5px 20em 113.5px 20em;
   position: relative;
   border-radius: 30px 30px 0px 0px;
 }
@@ -28,6 +27,7 @@
   font-size: 72px;
   line-height: 150%;
   color: white;
+  padding-top: 0;
 }
 
 .h2 {
@@ -51,20 +51,20 @@
 .immage {
   position: absolute;
   bottom: 0px;
-  right: 160px;
+  right: 450px;
 }
 
 .button {
   text-transform: uppercase;
   font-family: "Montserrat";
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   text-align: center;
   background-color: #e71a95;
   width: 48%;
   color: white;
   margin: 96px 0px 16px 0px;
-  padding: 16px 16px 16px 16px;
+  padding: 20px 20px 20px 20px;
   border-radius: 6px;
   border: none;
   transition: 0.3s linear;
@@ -97,6 +97,7 @@
 @media screen and (max-width: 1100px) {
   .background {
     padding: 1em 3em 1em 3em;
+    height: 720px;
   }
 
   .h1 {
@@ -134,7 +135,7 @@
 
 @media screen and (max-width: 700px) {
   .background {
-    padding: 1em 2em 1em 1em;
+    padding: 40px 20px 40px 20px;
     flex-direction: column;
     justify-content: center;
   }
@@ -176,6 +177,7 @@
     z-index: 3;
     width: 90%;
     margin: 0px 0px 0px 0px;
+    font-size: 16px;
   }
 
   .immage {
@@ -188,14 +190,20 @@
 
 @media screen and (max-width: 450px) {
   .immage {
-    width: 100%;
+    width: 93%;
   }
 
   .triangle {
     margin-top: auto;
     display: block;
     z-index: 3;
-    width: 70%;
+    width: 74.35%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .background {
+    height: 600px;
   }
 }
 

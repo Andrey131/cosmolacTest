@@ -20,25 +20,53 @@ const CosmolacIsScreen: React.FC<PropsType> = (props) => {
           <div className={s.rowContainer}>
             <Benefit
               image={firstImage}
-              body="Собственный завод и лаборатория"
+              body={
+                <div>
+                  Собственный завод
+                  <br />и лаборатория
+                </div>
+              }
             />
             <Benefit
               image={secondImage}
-              body="Полный цикл тестирования продуктов"
+              body={
+                <div>
+                  Полный цикл
+                  <br />
+                  тестирования продуктов
+                </div>
+              }
             />
             <Benefit
               image={thirdImage}
-              body="Широкий ассортимент и уникальная палитра"
+              body={
+                <div>
+                  Широкий ассортимент
+                  <br />и уникальная палитра
+                </div>
+              }
             />
           </div>
           <div className={s.rowContainer}>
             <Benefit
               image={fourthImage}
-              body="Штат технологов, колористов и nail-мастеров"
+              body={
+                <div>
+                  Штат технологов,
+                  <br />
+                  колористов и nail-мастеров
+                </div>
+              }
             />
             <Benefit
               image={fifthImage}
-              body="Постоянный контроль технологического процесса"
+              body={
+                <div>
+                  Постоянный контроль
+                  <br />
+                  технологического процесса
+                </div>
+              }
             />
           </div>
           <div className={s.buttonContainer}>
