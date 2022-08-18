@@ -96,7 +96,8 @@
 
 @media screen and (max-width: 700px) {
   .background {
-    margin: 1em 2em 1em 1em;
+    margin: 40px 20px 20px 20px;
+    gap: 20px;
   }
 
   .button {

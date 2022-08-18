@@ -34,6 +34,9 @@
   pointer-events: none;
 }
 
+.crossContainer {
+  padding: 0 0 0 20px;
+}
 .crossRotate {
   transform: rotate(45deg);
   fill: #e71a95;
@@ -45,7 +48,7 @@
 }
 
 @media screen and (max-width: 700px) {
-  body {
+  .accordionTitle {
     font-size: 18px;
   }
 

@@ -30,16 +30,16 @@ const Footer: React.FC<PropsType> = (props) => {
           <div>Мы в соцсетях</div>
           <div className={s.social}>
             <div className={s.socialBlock}>
-              <img src={tg} alt="logo" />
-              <img src={inst} alt="logo" />
-              <img src={youtube} alt="logo" />
-              <img src={vk} alt="logo" />
+              <img className={s.icon} src={tg} alt="logo" />
+              <img className={s.icon} src={inst} alt="logo" />
+              <img className={s.icon} src={youtube} alt="logo" />
+              <img className={s.icon} src={vk} alt="logo" />
             </div>
             <div className={s.socialBlock}>
-              <img src={tt} alt="logo" />
-              <img src={wb} alt="logo" />
-              <img src={ozon} alt="logo" />
-              <img src={fb} alt="logo" />
+              <img className={s.icon} src={tt} alt="logo" />
+              <img className={s.icon} src={wb} alt="logo" />
+              <img className={s.icon} src={ozon} alt="logo" />
+              <img className={s.icon} src={fb} alt="logo" />
             </div>
           </div>
         </div>

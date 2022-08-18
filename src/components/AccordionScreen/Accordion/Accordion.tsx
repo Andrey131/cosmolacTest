@@ -14,7 +14,7 @@ const Accordion: React.FC<PropsType> = ({ title, content }) => {
     <div className={s.accordionItem}>
       <div className={s.accordionTitle} onClick={() => setIsActive(!isActive)}>
         <div>{title}</div>
-        <div>
+        <div className={s.crossContainer}>
           <Cross className={isActive ? s.cross : s.crossRotate} />
         </div>
       </div>

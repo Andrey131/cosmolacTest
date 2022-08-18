@@ -12,6 +12,10 @@
   justify-content: center;
 }
 
+.icon {
+  width: 20px;
+}
+
 .content {
   display: flex;
   flex-direction: row;
@@ -108,7 +112,7 @@
 
 @media screen and (max-width: 700px) {
   .background {
-    margin: 1em 2em 1em 1em;
+    margin: 40px 20px 20px 20px;
     flex-direction: column;
     justify-content: center;
   }
@@ -129,9 +133,23 @@
     line-height: 150%;
   }
 
+  .rightBlock {
+    margin: 0 0 40px 0;
+  }
+
   .social {
     display: flex;
     flex-direction: column;
+    margin: 20px 0 40px 0;
+    gap: 30px;
+  }
+
+  .icon {
+    width: 40px;
+  }
+
+  .socialBlock {
+    gap: 40px;
   }
 
   .leftBlock {
@@ -141,6 +159,7 @@
     font-size: 18px;
     line-height: 150%;
     text-transform: uppercase;
+    margin: 0 0 40px 0;
   }
 
   .rightBlock {
