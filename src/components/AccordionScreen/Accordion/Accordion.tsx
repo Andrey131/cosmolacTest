@@ -44,7 +44,7 @@ const Accordion: React.FC<PropsType> = ({ title, content }) => {
       </div>
       <div
         ref={accordionContentRef}
-        style={!isActive ? { marginTop: accordionContentMargin } : undefined}
+        style={!isActive ? { marginBottom: accordionContentMargin } : undefined}
         className={
           isActive
             ? `${s.accordionContent}`
